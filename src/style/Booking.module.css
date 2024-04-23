@@ -1,0 +1,63 @@
+.Booking{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - 50px);
+    padding-top: 50px;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* width: 400px; */
+    width: 100%;
+    
+    >input,>select,>button{
+        padding: 0px 15px;
+        width: 400px;
+        height: 40px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid gray;
+        /* background-color: rgba(127, 255, 212, 0.208); */
+        background-color: #C9E0ED;
+    }
+    >button{
+        /* background-color: aquamarine; */
+        background-color: #4B7090;
+        color: white;
+    }
+    >button:hover{
+        /* background-color: rgb(255, 255, 255); */
+        background-color: #C9E0ED;
+        color: black;
+    }
+}
+.Banner{
+    background-image: url('../image/doc.jpg');
+    width: 50vw;
+    min-height: calc(100vh - 50px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+@media screen and (max-width:768px) {
+    .Booking{
+        grid-template-columns: 1fr;
+    }
+    .Banner{
+        width: 100vw;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .form{
+        justify-content: flex-start;
+        >input,>select,>button{
+            width: 60%;
+        }
+    }
+}

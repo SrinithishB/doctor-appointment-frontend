@@ -1,0 +1,31 @@
+.Nav{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 25px;;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.4);
+    background-color: #C9E0ED;
+    position: fixed;
+    width: 100vw;
+}
+.menu{
+    display: flex;
+    gap: 15px;
+    >a{
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1em;
+        color: black;
+    }
+}
+@media screen and (max-width:380px) {
+    .Nav{
+        /* flex-direction: column; */
+        height: fit-content;
+    }
+    .menu{
+        flex-direction: column;
+        gap: 5px;
+    }
+}
